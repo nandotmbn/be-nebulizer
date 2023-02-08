@@ -17,5 +17,5 @@ func main() {
 	routes.NebulizerRoute(v1)
 	routes.StateRoute(v1)
 
-	router.Run("localhost:8080")
+	router.Run(":8080")
 }
