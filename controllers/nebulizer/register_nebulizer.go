@@ -50,7 +50,7 @@ func RegisterNebulizer() gin.HandlerFunc {
 
 		newNebulizer := models.Nebulizer{
 			NebulizerName: nebulizer.NebulizerName,
-			State:         false,
+			State:         0,
 			Battery:       0,
 			Password:      string(bytes),
 			UpdatedAt:     time.Now(),
