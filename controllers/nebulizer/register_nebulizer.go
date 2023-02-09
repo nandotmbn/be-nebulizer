@@ -22,7 +22,7 @@ var nebulizerCollection *mongo.Collection = configs.GetCollection(configs.DB, "n
 func RegisterNebulizer() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-		var nebulizer models.Nebulizer
+		var nebulizer views.PayloadRetriveId
 		defer cancel()
 		c.BindJSON(&nebulizer)
 
